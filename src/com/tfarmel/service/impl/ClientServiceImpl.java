@@ -21,14 +21,15 @@ public class ClientServiceImpl implements ClientService {
 		
 	}
 
+
 	@Override
-	public Client getClient(int id) {
+	public Client getClientById(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Collection<Client> listClient() {
+	public Collection<Client> getAllClients() {
 		// TODO Auto-generated method stub
 		return null;
 	}

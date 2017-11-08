@@ -11,7 +11,7 @@ public interface ClientService   {
 	
 	public void createClient(Client c) throws BeanAlreadyExistException;
 	public void updateClient(Client c) throws BeanNotExistException;
-	public Client getClient(int id);
-	public Collection<Client> listClient();
+	public Client getClientById(int id);
+	public Collection<Client> getAllClients();
 
 }
