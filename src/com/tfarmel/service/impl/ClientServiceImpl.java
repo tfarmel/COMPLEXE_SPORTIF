@@ -2,7 +2,7 @@ package com.tfarmel.service.impl;
 
 import java.util.Collection;
 
-import com.tfarmel.Client;
+import com.tfarmel.entities.Client;
 import com.tfarmel.exception.BeanAlreadyExistException;
 import com.tfarmel.exception.BeanNotExistException;
 import com.tfarmel.service.ClientService;

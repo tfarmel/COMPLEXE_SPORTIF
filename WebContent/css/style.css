@@ -1,1 +1,43 @@
 @CHARSET "UTF-8";
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+
+/* header */
+.header{
+	background-color: #3498DB;
+	height: 70px;
+  	line-height: 70px;
+}
+
+.logo{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  float: left;
+}
+
+.menu{
+  float: right;
+}
+.menu a{
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.menu a:hover{
+  color: #2C3E50;
+}
+

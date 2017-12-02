@@ -1,5 +1,9 @@
 package com.tfarmel.dao;
 
-public interface ClientDao {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.tfarmel.entities.Client;
+
+public interface ClientDao extends JpaRepository<Client, Long> {
 
 }

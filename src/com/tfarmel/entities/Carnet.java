@@ -1,7 +1,13 @@
-package com.tfarmel;
+package com.tfarmel.entities;
 
-public class Carnet {
-	
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Carnet implements Serializable {
+
+	private Long id;
 	private int nombreEntrees;
 
 	public Carnet() {
@@ -11,6 +17,14 @@ public class Carnet {
 	public Carnet(int nombreEntrees) {
 		super();
 		this.nombreEntrees = nombreEntrees;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public int getNombreEntrees() {

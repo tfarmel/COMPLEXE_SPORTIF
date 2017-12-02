@@ -1,4 +1,4 @@
-package com.tfarmel;
+package com.tfarmel.entities;
 
 import java.io.Serializable;
 

@@ -1,6 +1,10 @@
-package com.tfarmel;
+package com.tfarmel.entities;
 
-public class Message {
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+@Entity
+public class Message implements Serializable {
 	
 	private String rue;
 	private int codePostal;
