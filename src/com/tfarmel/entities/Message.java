@@ -1,50 +1,49 @@
 package com.tfarmel.entities;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Entity;
 @Entity
 public class Message implements Serializable {
 	
-	private String rue;
-	private int codePostal;
-	private String ville;
+	private Long id;
+	private String message;
+	private Date dateEcriture;
 	
 	public Message() {
 		super();
 	}
-	
-	public Message(String rue, int codePostal, String ville) {
-		super();
-		this.rue = rue;
-		this.codePostal = codePostal;
-		this.ville = ville;
-	}
-	
-	public String getRue() {
-		return rue;
-	}
-	
-	public void setRue(String rue) {
-		this.rue = rue;
-	}
-	
-	public int getCodePostal() {
-		return codePostal;
-	}
-	
-	public void setCodePostal(int codePostal) {
-		this.codePostal = codePostal;
-	}
-	
-	public String getVille() {
-		return ville;
-	}
-	
-	public void setVille(String ville) {
-		this.ville = ville;
-	}
-	
-	
 
+	public Message(String message, Date dateEcriture) {
+		super();
+		this.message = message;
+		this.dateEcriture = dateEcriture;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public Date getDateEcriture() {
+		return dateEcriture;
+	}
+
+	public void setDateEcriture(Date dateEcriture) {
+		this.dateEcriture = dateEcriture;
+	}
+	
+	
 }

@@ -1,6 +1,7 @@
 package com.tfarmel.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 
 import javax.persistence.Entity;
 
@@ -9,14 +10,19 @@ public class Carnet implements Serializable {
 
 	private Long id;
 	private int nombreEntrees;
+	
+	private Client client;
+	private Sport sports;
 
 	public Carnet() {
 		super();
 	}
 
-	public Carnet(int nombreEntrees) {
+	public Carnet(int nombreEntrees, Client client, Sport sports) {
 		super();
 		this.nombreEntrees = nombreEntrees;
+		this.client = client;
+		this.sports = sports;
 	}
 
 	public Long getId() {
@@ -34,4 +40,22 @@ public class Carnet implements Serializable {
 	public void setNombreEntrees(int nombreEntrees) {
 		this.nombreEntrees = nombreEntrees;
 	}
+
+	public Client getClient() {
+		return client;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
+	}
+
+	public Sport getSports() {
+		return sports;
+	}
+
+	public void setSports(Sport sports) {
+		this.sports = sports;
+	}
+
+	
 }
